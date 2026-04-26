@@ -9,7 +9,7 @@
   <input type="text" id="mlbb" placeholder="Enter ID">
   <button onclick="order('MLBB Diamond',5,'mlbb')">Order</button>
 <script>
-const const BOT_TOKEN = "8079772867:AAEYmy_qJ4DSnMgfWXPUCoboYVXxcvhqxac";
+const BOT_TOKEN = "8079772867:AAEYmy_qJ4DSnMgfWXPUCoboYVXxcvhqxac";
 const CHAT_ID = "6635021692"
 con
 function order(name, price, inputId) {
