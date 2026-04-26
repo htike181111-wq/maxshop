@@ -7,7 +7,7 @@
 
 <h1>MaX Game Shop</h1>
 
-<input type="text" id="mlbb" placeholder="Enter Your ID">
+<input type="text" id="mlbb" placeholder="Enter ID">
 <br><br>
 <button onclick="order()">Order Now</button>
 
