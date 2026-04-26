@@ -11,7 +11,6 @@
 <script>
 const BOT_TOKEN = "8079772867:AAEYmy_qJ4DSnMgfWXPUCoboYVXxcvhqxac";
 const CHAT_ID = "6635021692"
-con
 function order(name, price, inputId) {
   let value = document.getElementById(inputId).value;
   let text = "New Order\nItem: " + name + "\nID: " + value;
@@ -22,7 +21,7 @@ function order(name, price, inputId) {
       chat_id: CHAT_ID,
       text: text
     })
-  });
+  })
   alert("Order Sent");
 }
 </script>
