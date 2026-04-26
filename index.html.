@@ -1,28 +1,39 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
-  <title>MaX Shop</title>
+  <title>MaX Shop</title>
 </head>
 <body>
-  <h1>MaX Game Shop</h1>
-  <p>MLBB Diamond / PUBG UC / TikTok Boost</p>
-  <input type="text" id="mlbb" placeholder="Enter ID">
-  <button onclick="order('MLBB Diamond', '100', 'mlbb')">Order</button>
+
+<h1>MaX Game Shop</h1>
+
+<input type="text" id="mlbb" placeholder="Enter Your ID">
+<br><br>
+<button onclick="order()">Order Now</button>
+
 <script>
-const BOT_TOKEN = "8079772867:AAGO3RG1fzTdfb-UagfQ7nY7qY7_WvLeVH0"
+const BOT_TOKEN = "8079772867:AAGO3RG1fzTdfb-UagfQ7nY7qY7_WvLeVH0";
 const CHAT_ID = "6635021692";
-function order(name, price, inputId) {
-  let value = document.getElementById(inputId).value;
-  let text = "New Order\nItem: " + name + "\nID: " + value;
-  fetch("https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage",{method: "POST",
-    headers:{"Content-Type":"application/json"},
-    body: JSON.stringify({
-      chat_id: CHAT_ID,
-      text: text
-    })
-  })
-  alert("Order Sent");
+
+function order(){
+  let value = document.getElementById("mlbb").value;
+
+  let text = "New Order\nID: " + value;
+
+  fetch("https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      chat_id: CHAT_ID,
+      text: text
+    })
+  });
+
+  alert("Order Sent");
 }
 </script>
+
 </body>
 </html>
