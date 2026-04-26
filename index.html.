@@ -6,7 +6,7 @@
 <body>
   <h1>MaX Game Shop</h1>
   <p>MLBB Diamond / PUBG UC / TikTok Boost</p>
-  document.getElementById("mlbb")
+  <input type="text" id="mlbb" placeholder="Enter ID">
   <button onclick="order('MLBB Diamond', '100', 'mlbb')">Order</button>
 <script>
 const BOT_TOKEN = "8079772867:AAEYmy_qJ4DSnMgfWXPUCoboYVXxcvhqxac"
